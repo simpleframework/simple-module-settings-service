@@ -1,8 +1,8 @@
 package net.simpleframework.module.settings.impl;
 
 import static net.simpleframework.common.I18n.$m;
+import net.simpleframework.ctx.AbstractModuleContext;
 import net.simpleframework.ctx.Module;
-import net.simpleframework.ctx.service.ado.db.AbstractDbModuleContext;
 import net.simpleframework.module.settings.ISettingsContext;
 
 /**
@@ -11,7 +11,7 @@ import net.simpleframework.module.settings.ISettingsContext;
  * @author 陈侃(cknet@126.com, 13910090885) https://github.com/simpleframework
  *         http://www.simpleframework.net
  */
-public class SettingsContext extends AbstractDbModuleContext implements ISettingsContext {
+public class SettingsContext extends AbstractModuleContext implements ISettingsContext {
 
 	@Override
 	protected Module createModule() {
