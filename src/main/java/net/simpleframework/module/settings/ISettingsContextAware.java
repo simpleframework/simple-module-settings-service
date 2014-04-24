@@ -11,5 +11,5 @@ import net.simpleframework.ctx.ModuleContextFactory;
  */
 public interface ISettingsContextAware extends IModuleContextAware {
 
-	static ISettingsContext context = ModuleContextFactory.get(ISettingsContext.class);
+	static ISettingsContext settingsContext = ModuleContextFactory.get(ISettingsContext.class);
 }
