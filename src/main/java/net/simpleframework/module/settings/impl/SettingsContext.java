@@ -3,7 +3,6 @@ package net.simpleframework.module.settings.impl;
 import static net.simpleframework.common.I18n.$m;
 import net.simpleframework.ctx.AbstractModuleContext;
 import net.simpleframework.ctx.Module;
-import net.simpleframework.ctx.permission.IPermissionConst;
 import net.simpleframework.module.settings.ISettingsContext;
 
 /**
@@ -13,11 +12,6 @@ import net.simpleframework.module.settings.ISettingsContext;
  *         http://www.simpleframework.net
  */
 public class SettingsContext extends AbstractModuleContext implements ISettingsContext {
-
-	@Override
-	public String getManagerRole() {
-		return IPermissionConst.ROLE_MANAGER;
-	}
 
 	@Override
 	protected Module createModule() {
