@@ -1,6 +1,7 @@
 package net.simpleframework.module.settings.impl;
 
 import static net.simpleframework.common.I18n.$m;
+
 import net.simpleframework.ctx.AbstractModuleContext;
 import net.simpleframework.ctx.Module;
 import net.simpleframework.module.settings.ISettingsContext;
@@ -15,7 +16,7 @@ public class SettingsContext extends AbstractModuleContext implements ISettingsC
 
 	@Override
 	protected Module createModule() {
-		return new Module().setName(MODULE_NAME).setText($m("SettingsContext.0")).setOrder(3);
+		return super.createModule().setName(MODULE_NAME).setText($m("SettingsContext.0")).setOrder(3);
 	}
 
 	@Override
